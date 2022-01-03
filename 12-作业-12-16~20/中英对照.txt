@@ -1,0 +1,8 @@
+员工登录——StaffRegister
+员工主页——StaffHomepage
+员工修改密码——StaffAlterCode
+员工列表——StaffEntry
+员工添加修改——StaffAddAlter
+部门列表——ClassEntry
+部门添加修改——ClassAddAlter
+关于我们——AboutWe

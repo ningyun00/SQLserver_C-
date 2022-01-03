@@ -1,0 +1,558 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F96774D4-0E22-4F8C-B4C1-7BED75EE5B8E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>StoreSystem</RootNamespace>
+    <AssemblyName>StoreSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccountantbillManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccountantbillManage.Designer.cs">
+      <DependentUpon>AccountantbillManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddWareForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddWareForm.Designer.cs">
+      <DependentUpon>AddWareForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddUserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddUserForm.Designer.cs">
+      <DependentUpon>AddUserForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddWarePriceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddWarePriceForm.Designer.cs">
+      <DependentUpon>AddWarePriceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="help.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="help.Designer.cs">
+      <DependentUpon>help.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="WarePriceManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WarePriceManage.Designer.cs">
+      <DependentUpon>WarePriceManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerBalance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerBalance.Designer.cs">
+      <DependentUpon>CustomerBalance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WareTypeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WareTypeForm.Designer.cs">
+      <DependentUpon>WareTypeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WareInfoMangeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WareInfoMangeForm.Designer.cs">
+      <DependentUpon>WareInfoMangeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserInfoManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserInfoManage.Designer.cs">
+      <DependentUpon>UserInfoManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainFrame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainFrame.Designer.cs">
+      <DependentUpon>MainFrame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AccountantbillManage.resx">
+      <DependentUpon>AccountantbillManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddWareForm.resx">
+      <DependentUpon>AddWareForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddUserForm.resx">
+      <DependentUpon>AddUserForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddWarePriceForm.resx">
+      <DependentUpon>AddWarePriceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="help.resx">
+      <DependentUpon>help.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WarePriceManage.resx">
+      <DependentUpon>WarePriceManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerBalance.resx">
+      <DependentUpon>CustomerBalance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WareTypeForm.resx">
+      <DependentUpon>WareTypeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WareInfoMangeForm.resx">
+      <DependentUpon>WareInfoMangeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserInfoManage.resx">
+      <DependentUpon>UserInfoManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainFrame.resx">
+      <DependentUpon>MainFrame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="图片\111个彩色网页PNG图标\懒人图库.url" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图片\ico\w1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图片\ico\w2.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图片\ico\w3.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图片\ico\w4.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图片\ico\w5.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图片\ico\w6.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图片\ico\w7.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图片\ico\w8.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图片\ico\w9.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图片\ico\w10.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图片\ico\w11.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图片\ico\说明.htm" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图片\111个彩色网页PNG图标\arrow_down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图片\111个彩色网页PNG图标\arrow_left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图片\111个彩色网页PNG图标\arrow_left-down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图片\111个彩色网页PNG图标\arrow_left-up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图片\111个彩色网页PNG图标\arrow_right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图片\111个彩色网页PNG图标\arrow_right-down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图片\111个彩色网页PNG图标\arrow_right-up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图片\111个彩色网页PNG图标\arrow_up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图片\111个彩色网页PNG图标\attention.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图片\111个彩色网页PNG图标\backward.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图片\111个彩色网页PNG图标\bag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图片\111个彩色网页PNG图标\base.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图片\111个彩色网页PNG图标\bonus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图片\111个彩色网页PNG图标\bug.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图片\111个彩色网页PNG图标\calculator.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图片\111个彩色网页PNG图标\calendar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图片\111个彩色网页PNG图标\cd_dvd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图片\111个彩色网页PNG图标\check.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图片\111个彩色网页PNG图标\check_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图片\111个彩色网页PNG图标\check-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图片\111个彩色网页PNG图标\close_delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图片\111个彩色网页PNG图标\close_delete_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图片\111个彩色网页PNG图标\closed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图片\111个彩色网页PNG图标\comment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图片\111个彩色网页PNG图标\computer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图片\111个彩色网页PNG图标\computer_monitor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图片\111个彩色网页PNG图标\copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图片\111个彩色网页PNG图标\credit_card.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图片\111个彩色网页PNG图标\credit_card_back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图片\111个彩色网页PNG图标\cut.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图片\111个彩色网页PNG图标\delete_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图片\111个彩色网页PNG图标\document_file.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图片\111个彩色网页PNG图标\email.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图片\111个彩色网页PNG图标\eraser.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图片\111个彩色网页PNG图标\favorite_love.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图片\111个彩色网页PNG图标\flag_mark_blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图片\111个彩色网页PNG图标\flag_mark_gray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图片\111个彩色网页PNG图标\flag_mark_green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图片\111个彩色网页PNG图标\flag_mark_red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图片\111个彩色网页PNG图标\flag_mark_violet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图片\111个彩色网页PNG图标\flag_mark_yellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图片\111个彩色网页PNG图标\folder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图片\111个彩色网页PNG图标\forward.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图片\111个彩色网页PNG图标\friends_group.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图片\111个彩色网页PNG图标\help.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图片\111个彩色网页PNG图标\help_ring-buoy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图片\111个彩色网页PNG图标\home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图片\111个彩色网页PNG图标\information.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图片\111个彩色网页PNG图标\ipod.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图片\111个彩色网页PNG图标\key_login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图片\111个彩色网页PNG图标\lamp_active.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图片\111个彩色网页PNG图标\lamp_inactive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图片\111个彩色网页PNG图标\lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图片\111个彩色网页PNG图标\minus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图片\111个彩色网页PNG图标\minus_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图片\111个彩色网页PNG图标\mobile_phone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图片\111个彩色网页PNG图标\network.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图片\111个彩色网页PNG图标\network_close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图片\111个彩色网页PNG图标\new_email.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图片\111个彩色网页PNG图标\next.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图片\111个彩色网页PNG图标\opened.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图片\111个彩色网页PNG图标\options.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图片\111个彩色网页PNG图标\options_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图片\111个彩色网页PNG图标\paste.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图片\111个彩色网页PNG图标\pause.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图片\111个彩色网页PNG图标\pencil_edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图片\111个彩色网页PNG图标\pie-chart_diagram.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图片\111个彩色网页PNG图标\pie-chart_graph.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图片\111个彩色网页PNG图标\play.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图片\111个彩色网页PNG图标\plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图片\111个彩色网页PNG图标\plus_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图片\111个彩色网页PNG图标\previous.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图片\111个彩色网页PNG图标\printer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图片\111个彩色网页PNG图标\radio-button_off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图片\111个彩色网页PNG图标\radio-button_on.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图片\111个彩色网页PNG图标\record.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图片\111个彩色网页PNG图标\refresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图片\111个彩色网页PNG图标\rss.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图片\111个彩色网页PNG图标\save_as.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图片\111个彩色网页PNG图标\save_diskette_floppy_disk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图片\111个彩色网页PNG图标\search_lense.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图片\111个彩色网页PNG图标\shield_protect_off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图片\111个彩色网页PNG图标\shield_protect_on.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图片\111个彩色网页PNG图标\shopping_cart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图片\111个彩色网页PNG图标\shopping_cart_empty.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图片\111个彩色网页PNG图标\smartphone_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图片\111个彩色网页PNG图标\smartphone_iphone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图片\111个彩色网页PNG图标\sound_music-off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图片\111个彩色网页PNG图标\sound_music-on.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图片\111个彩色网页PNG图标\star.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图片\111个彩色网页PNG图标\star_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图片\111个彩色网页PNG图标\star_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图片\111个彩色网页PNG图标\stop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图片\111个彩色网页PNG图标\stop_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图片\111个彩色网页PNG图标\tag_blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图片\111个彩色网页PNG图标\tag_gray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图片\111个彩色网页PNG图标\tag_green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图片\111个彩色网页PNG图标\tag_orange.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图片\111个彩色网页PNG图标\tag_red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图片\111个彩色网页PNG图标\tag_violet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图片\111个彩色网页PNG图标\tag_white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图片\111个彩色网页PNG图标\tag_yellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图片\111个彩色网页PNG图标\time_clock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图片\111个彩色网页PNG图标\trash_box.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图片\111个彩色网页PNG图标\trash_box_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图片\111个彩色网页PNG图标\unlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图片\111个彩色网页PNG图标\user_friend.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图片\111个彩色网页PNG图标\user_woman.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图片\111个彩色网页PNG图标\vote_no.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图片\111个彩色网页PNG图标\vote_yes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图片\111个彩色网页PNG图标\wizard.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

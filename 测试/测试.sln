@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31911.196
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "测试", "测试\测试.csproj", "{49020A8C-6F60-4726-BCA9-C6D952E45AEB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "坦克大战", "坦克大战\坦克大战.csproj", "{6B496295-9CAE-4EB6-85CE-1FAB1AD9B80D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{49020A8C-6F60-4726-BCA9-C6D952E45AEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49020A8C-6F60-4726-BCA9-C6D952E45AEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49020A8C-6F60-4726-BCA9-C6D952E45AEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49020A8C-6F60-4726-BCA9-C6D952E45AEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B496295-9CAE-4EB6-85CE-1FAB1AD9B80D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B496295-9CAE-4EB6-85CE-1FAB1AD9B80D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B496295-9CAE-4EB6-85CE-1FAB1AD9B80D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B496295-9CAE-4EB6-85CE-1FAB1AD9B80D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DEB9EFE0-E9D7-483B-8769-E77EAD87E0B5}
+	EndGlobalSection
+EndGlobal

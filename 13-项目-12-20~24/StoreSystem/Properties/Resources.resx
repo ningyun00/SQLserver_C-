@@ -1,0 +1,826 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="paste" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\paste.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="time_clock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\time_clock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="network_close" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\network_close.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_lock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\lock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="favorite_love1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\favorite_love.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="calendar1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\calendar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="check_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\check_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="play" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\play.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="arrow_left" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\arrow_left.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="eraser1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\eraser.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tag_red" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\tag_red.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="printer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\printer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="check_21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\check_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="star_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\star_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="key_login1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\key_login.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="star1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\star.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="unlock1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\unlock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="minus_21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\minus_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="arrow_right_down" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\arrow_right-down.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tag_yellow1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\tag_yellow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="star_31" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\star_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="user_woman" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\user_woman.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="next1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\next.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="check_64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\check-64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="arrow_down" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\arrow_down.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="w1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\ico\w1.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_mark_green1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\flag_mark_green.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="w8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\ico\w8.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\lock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="w6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\ico\w6.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lamp_active1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\lamp_active.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tag_blue1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\tag_blue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wizard1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\wizard.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tag_violet" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\tag_violet.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="user_woman1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\user_woman.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="vote_no1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\vote_no.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cut" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\cut.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="play1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\play.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="time_clock1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\time_clock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="plus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\plus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="next" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\next.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lamp_active" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\lamp_active.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="options_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\options_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="save_as1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\save_as.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="arrow_right_up" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\arrow_right-up.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="smartphone_iphone" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\smartphone_iphone.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="refresh1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\refresh.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="paste1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\paste.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="smartphone_21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\smartphone_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="credit_card1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\credit_card.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="friends_group" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\friends_group.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bag1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\bag.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="key_login" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\key_login.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="trash_box_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\trash_box_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="network1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\network.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="comment" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\comment.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="trash_box_21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\trash_box_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_mark_gray1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\flag_mark_gray.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tag_yellow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\tag_yellow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="record1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\record.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="check-64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\check-64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="backward1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\backward.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_mark_gray" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\flag_mark_gray.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tag_white1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\tag_white.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="close_delete" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\close_delete.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="w2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\ico\w2.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="plus1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\plus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="options" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\options.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bug1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\bug.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="shopping_cart_empty" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\shopping_cart_empty.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="forward" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\forward.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="save_as" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\save_as.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="opened1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\opened.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="radio_button_off" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\radio-button_off.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="computer_monitor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\computer_monitor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="arrow_right1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\arrow_right.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="shield_protect_on" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\shield_protect_on.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="shopping_cart" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\shopping_cart.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tag_violet1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\tag_violet.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="home1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\home.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_base" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\base.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rss" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\rss.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="search_lense" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\search_lense.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="folder1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\folder.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="arrow_left-down" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\arrow_left-down.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bonus1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\bonus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="save_diskette_floppy_disk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\save_diskette_floppy_disk.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="arrow_down1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\arrow_down.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tag_orange1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\tag_orange.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="vote_yes1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\vote_yes.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="arrow_left-up" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\arrow_left-up.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="help1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\help.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="previous1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\previous.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="delete_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\delete_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="shield_protect_off1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\shield_protect_off.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="stop" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\stop.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="arrow_left_down" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\arrow_left-down.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="delete_21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\delete_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pie-chart_graph" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\pie-chart_graph.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_mark_red1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\flag_mark_red.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bug" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\bug.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="minus_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\minus_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tag_green" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\tag_green.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="credit_card_back" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\credit_card_back.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="trash_box1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\trash_box.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cd_dvd1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\cd_dvd.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tag_white" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\tag_white.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="backward" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\backward.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sound_music-off" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\sound_music-off.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sound_music_off" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\sound_music-off.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="copy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\copy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wizard" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\wizard.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="w3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\ico\w3.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bonus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\bonus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="copy1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\copy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="credit_card_back1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\credit_card_back.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="document_file" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\document_file.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tag_gray1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\tag_gray.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tag_orange" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\tag_orange.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="network" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\network.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="opened" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\opened.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lamp_inactive1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\lamp_inactive.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="favorite_love" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\favorite_love.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_mark_violet1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\flag_mark_violet.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tag_red1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\tag_red.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="close_delete1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\close_delete.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="arrow_up1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\arrow_up.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="w4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\ico\w4.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pencil_edit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\pencil_edit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="options_21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\options_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="refresh" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\refresh.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_mark_blue1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\flag_mark_blue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="smartphone_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\smartphone_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="w11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\ico\w11.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lamp_inactive" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\lamp_inactive.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="arrow_right-up" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\arrow_right-up.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="minus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\minus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="folder" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\folder.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_mark_red" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\flag_mark_red.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="network_close1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\network_close.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="calculator" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\calculator.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="arrow_right" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\arrow_right.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ipod1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\ipod.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="radio_button_on" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\radio-button_on.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="record" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\record.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pie_chart_graph" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\pie-chart_graph.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="computer1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\computer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="attention1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\attention.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_mark_yellow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\flag_mark_yellow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="email1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\email.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bag" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\bag.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="说明" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\ico\说明.htm;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;gb2312</value>
+  </data>
+  <data name="plus_21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\plus_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="closed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\closed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="previous" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\previous.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="information1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\information.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="plus_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\plus_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="credit_card" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\credit_card.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="vote_no" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\vote_no.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="information" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\information.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="shopping_cart1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\shopping_cart.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="user_friend1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\user_friend.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="friends_group1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\friends_group.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tag_blue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\tag_blue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="user_friend" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\user_friend.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mobile_phone" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\mobile_phone.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="save_diskette_floppy_disk1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\save_diskette_floppy_disk.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="stop_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\stop_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="star_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\star_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="arrow_left_up" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\arrow_left-up.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="new_email1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\new_email.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tag_green1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\tag_green.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="unlock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\unlock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pause1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\pause.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="options1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\options.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="computer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\computer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="radio-button_on" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\radio-button_on.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="w10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\ico\w10.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_mark_yellow1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\flag_mark_yellow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pause" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\pause.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="email" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\email.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="printer1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\printer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="help" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\help.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="calculator1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\calculator.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cd_dvd" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\cd_dvd.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="minus1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\minus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="calendar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\calendar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="star_21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\star_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pie_chart_diagram" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\pie-chart_diagram.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_mark_blue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\flag_mark_blue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="close_delete_21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\close_delete_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="home" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\home.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="懒人图库" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\懒人图库.url;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="cut1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\cut.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pie-chart_diagram" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\pie-chart_diagram.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="stop1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\stop.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="forward1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\forward.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="smartphone_iphone1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\smartphone_iphone.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="comment1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\comment.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="computer_monitor1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\computer_monitor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="w5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\ico\w5.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ipod" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\ipod.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tag_gray" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\tag_gray.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="shield_protect_off" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\shield_protect_off.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="shield_protect_on1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\shield_protect_on.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="search_lense1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\search_lense.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mobile_phone1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\mobile_phone.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="arrow_up" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\arrow_up.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="shopping_cart_empty1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\shopping_cart_empty.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="trash_box" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\trash_box.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="document_file1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\document_file.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="arrow_right-down" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\arrow_right-down.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sound_music_on" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\sound_music-on.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_mark_violet" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\flag_mark_violet.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="new_email" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\new_email.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sound_music-on" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\sound_music-on.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rss1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\rss.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="attention" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\attention.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="close_delete_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\close_delete_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="help_ring-buoy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\help_ring-buoy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="check" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\check.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="stop_21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\stop_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="check1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\check.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="arrow_left1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\arrow_left.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_mark_green" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\flag_mark_green.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="radio-button_off" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\radio-button_off.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="eraser" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\eraser.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pencil_edit1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\pencil_edit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="vote_yes" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\vote_yes.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="help_ring_buoy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\help_ring-buoy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="w9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\ico\w9.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="star" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\star.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="base" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\base.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="closed1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\closed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="shopping_cart2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\图片\111个彩色网页PNG图标\shopping_cart.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+</root>
