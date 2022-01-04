@@ -41,7 +41,7 @@ namespace StoreSystem
             {
                 sqlconn = new SqlConnection("server= .;uid= sa;pwd= 123456;database= StoreSystem ");
                 sqlconn.Open();
-                string sql = string.Format("select * from UserInfo");
+                string sql = string.Format("select userID,userName,userTelphone,userRemark from UserInfo");
                 SqlDataAdapter sda = new SqlDataAdapter(sql, sqlconn);
                 DataSet ds = new DataSet();
                 sda.Fill(ds);
@@ -79,7 +79,7 @@ namespace StoreSystem
             sqlconn.Close();
         }
         public static int A;
-        private void dataGridView1_CellMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
+        private void button1_Click_1(object sender, EventArgs e)
         {
             A = (int)dataGridView1.SelectedRows[0].Cells[0].Value;
             foreach (Form item in MdiChildren)
@@ -91,13 +91,13 @@ namespace StoreSystem
                 }
             }
             AlterUser au = new AlterUser();
-            au.MdiParent = MdiParent;
+            au.MdiParent = this.MdiParent;
             au.Show();
         }
 
         private void UserInfoManage_Load(object sender, EventArgs e)
         {
-
+            shuaxin();
         }
     }
 }
