@@ -86,7 +86,7 @@ namespace StoreSystem
                     item.BringToFront();
                     return;
                 }
-            }   
+            }
             WarePriceManage wpm = new WarePriceManage();
             wpm.MdiParent = this;
             wpm.Show();
@@ -203,5 +203,20 @@ namespace StoreSystem
             DateTime dt = DateTime.Now;
             toolStripStatusLabel4.Text = dt.ToString("G");
         }
+
+        //private void 考勤记录GToolStripMenuItem_Click(object sender, EventArgs e)
+        //{
+        //    foreach (Form item in this.MdiChildren)
+        //    {
+        //        if (item.GetType().Name == "PunchingCardRecord")
+        //        {//商品结算
+        //            item.BringToFront();
+        //            return;
+        //        }
+        //    }
+        //    PunchingCardRecord pcr = new PunchingCardRecord();
+        //    pcr.MdiParent = this;
+        //    pcr.Show();
+        //}
     }
 }

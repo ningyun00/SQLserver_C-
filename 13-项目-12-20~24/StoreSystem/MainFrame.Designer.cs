@@ -201,7 +201,7 @@
             // 
             this.退出系统XToolStripMenuItem.Image = global::StoreSystem.Properties.Resources.options_21;
             this.退出系统XToolStripMenuItem.Name = "退出系统XToolStripMenuItem";
-            this.退出系统XToolStripMenuItem.Size = new System.Drawing.Size(164, 26);
+            this.退出系统XToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
             this.退出系统XToolStripMenuItem.Text = "退出系统(&X)";
             this.退出系统XToolStripMenuItem.Click += new System.EventHandler(this.退出系统XToolStripMenuItem_Click);
             // 
@@ -217,7 +217,7 @@
             this.帮助文档ToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(906, 29);
+            this.menuStrip1.Size = new System.Drawing.Size(908, 29);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -230,7 +230,7 @@
             this.toolStripStatusLabel4});
             this.statusStrip1.Location = new System.Drawing.Point(0, 437);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(906, 22);
+            this.statusStrip1.Size = new System.Drawing.Size(908, 22);
             this.statusStrip1.TabIndex = 2;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -269,7 +269,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.ClientSize = new System.Drawing.Size(906, 459);
+            this.ClientSize = new System.Drawing.Size(908, 459);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.menuStrip1);
             this.ForeColor = System.Drawing.Color.Black;
@@ -277,7 +277,7 @@
             this.IsMdiContainer = true;
             this.Name = "MainFrame";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "MainFrame";
+            this.Text = "超市管理系统";
             this.TransparencyKey = System.Drawing.Color.Transparent;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainFrame_FormClosing);

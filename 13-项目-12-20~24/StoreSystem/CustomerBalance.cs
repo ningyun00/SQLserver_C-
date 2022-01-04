@@ -121,14 +121,14 @@ namespace StoreSystem
         private void button3_Click(object sender, EventArgs e)
         {
             MessageBox.Show(sum.ToString(), "系统提示");
-            textBox2.Text = "您购买了：" + (Convert.ToInt32(listView1.Items.Count)-1) + "件商品。\n总价格是：" + sum + "元";
+            textBox2.Text = "您购买了：" + (Convert.ToInt32(listView1.Items.Count) - 1) + "件商品。\n总价格是：" + sum + "元";
             try
             {
                 //连接数据库
                 con.Open();
                 if (con.State == ConnectionState.Open)
                 {//打开数据库
-                    string sql = string.Format("select WareInFo.wareId,wareName, warePrice from WareInFo inner join WarePrice on WareInFo.wareId = WarePrice.wareId where WareInfo.wareId = {0}", ID);
+                    string sql = string.Format("select WareInFo.wareId,wareName, warePrice from WareInFo inner join WarePrice on WareInFo.wareId = WarePrice.wareId ");
                     SqlDataAdapter sda = new SqlDataAdapter(sql, con);
                     DataSet ds = new DataSet();
                     sda.Fill(ds);

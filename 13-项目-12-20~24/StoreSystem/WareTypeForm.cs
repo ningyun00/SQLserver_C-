@@ -146,8 +146,8 @@ namespace StoreSystem
         {
             if (MessageBox.Show("确定删除吗？", "系统提示", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
             {
-                shanchu();
-                longin();
+                    shanchu();
+                    longin();
             }
             else
             {
@@ -177,7 +177,7 @@ namespace StoreSystem
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message, "系统提示错误", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("该类型下有商品", "系统提示错误", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             finally
             {

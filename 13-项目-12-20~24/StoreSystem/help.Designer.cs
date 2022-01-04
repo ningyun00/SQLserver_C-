@@ -39,9 +39,9 @@ namespace StoreSystem
             this.label1.Font = new System.Drawing.Font("宋体", 12F);
             this.label1.Location = new System.Drawing.Point(145, 111);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(216, 144);
+            this.label1.Size = new System.Drawing.Size(248, 112);
             this.label1.TabIndex = 0;
-            this.label1.Text = "如有出错，概不负责。\r\n\r\n制作人员；余凯、寜、陈宇琪\r\n\r\n数据库：余凯。\r\n\r\n窗体：陈宇琪\r\n\r\n代码：余凯、寜、陈宇琪。";
+            this.label1.Text = "制作人员；余凯、徐广宁、陈宇琪\r\n\r\n数据库：余凯。\r\n\r\n窗体：陈宇琪\r\n\r\n代码：余凯、徐广宁、陈宇琪。";
             // 
             // help
             // 

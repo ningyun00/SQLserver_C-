@@ -18,10 +18,14 @@ namespace StoreSystem
             InitializeComponent();
         }
         SqlConnection con = new SqlConnection("server=.;uid=sa;pwd=123456;database=StoreSystem");
+        //连接数据库
         private void button1_Click(object sender, EventArgs e)
         {
-            shanchu();//删除
-            chaXunSuoYou();
+            if (MessageBox.Show("确定删除吗？", "系统提示", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
+            {
+                shanchu();//删除
+                chaXunSuoYou();//查询所有
+            }
         }
 
         private void shanchu()
@@ -31,7 +35,7 @@ namespace StoreSystem
                 con.Open();
                 if (con.State == ConnectionState.Open)
                 {
-                    string sql = string.Format("delete from CustomerTab where tabId = {0}", dataGridView1.SelectedRows[0].Cells[0].Value);
+                    string sql = string.Format("delete from CustomerTab where tabId = {0}", dataGridView1.SelectedRows[0].Cells[0].Value);//删除某行某列
                     SqlCommand cmd = new SqlCommand(sql, con);
                     if (cmd.ExecuteNonQuery() > 0)
                     {
@@ -55,10 +59,10 @@ namespace StoreSystem
 
         private void button2_Click(object sender, EventArgs e)
         {
-            chaXunSuoYou();
+            chaXunSuoYou();//查询所有
         }
 
-        private void chaXunSuoYou()
+        private void chaXunSuoYou()//查询所有
         {
             try
             {
@@ -87,14 +91,14 @@ namespace StoreSystem
             riqichaxun();
         }
 
-        private void riqichaxun()
+        private void riqichaxun()//日期查询
         {
             try
             {
                 con.Open();
                 if (con.State == ConnectionState.Open)
                 {
-                    string sql = string.Format("select * from CustomerTab where tabId = {0}",comboBox1.SelectedValue);
+                    string sql = string.Format("select * from CustomerTab where tabId = {0}", comboBox1.SelectedValue);
                     SqlDataAdapter sda = new SqlDataAdapter(sql, con);
                     DataSet ds = new DataSet();
                     sda.Fill(ds);

@@ -19,26 +19,47 @@ namespace StoreSystem
         }
 
         private void button1_Click(object sender, EventArgs e)
+        {//数据库连接字符串
+            if (weiko())//为空判断
+            {
+                SqlConnection sqlconn = new SqlConnection("server=. ; uid=sa ; pwd=123456 ; database=StoreSystem");
+                sqlconn.Open();//打开数据库
+                string sql = string.Format("update WarePrice set warePrice='{0}',wareDiscount='{1}',Remark='{2}' from WarePrice inner join WareInfo on [WarePrice].wareId=[WareInfo].wareId where wareName='{3}'", textBox3.Text, textBox1.Text, textBox2.Text, comboBox1.Text);
+                //修改
+                SqlCommand sqlcmd = new SqlCommand(sql, sqlconn);
+                //执行命令
+                int jg = sqlcmd.ExecuteNonQuery();
+                //传递结果,受影响的行数
+                if (jg > 0)
+                {
+                    MessageBox.Show("成功保存！", "系统提示");
+                }
+                else
+                {
+                    MessageBox.Show("修改保存！", "系统提示");
+                }
+                sqlconn.Close();
+            }
+        }
+
+        private bool weiko()
         {
-            SqlConnection sqlconn = new SqlConnection("server=. ; uid=sa ; pwd=123456 ; database=StoreSystem");
-            sqlconn.Open();
-            string sql = string.Format("update WarePrice set warePrice='{0}',wareDiscount='{1}',Remark='{2}' from WarePrice inner join WareInfo on [WarePrice].wareId=[WareInfo].wareId where wareName='{3}'", textBox3.Text, textBox1.Text, textBox2.Text, comboBox1.Text);
-            SqlCommand sqlcmd = new SqlCommand(sql, sqlconn);
-            int jg = sqlcmd.ExecuteNonQuery();
-            if (jg > 0)
+            if (textBox3.Text == string.Empty)
             {
-                MessageBox.Show("成功保存！", "系统提示");
+                MessageBox.Show("请输入商品价格", "系统提示");
+                return false;
             }
-            else
+            if (textBox4.Text == string.Empty)
             {
-                MessageBox.Show("修改保存！", "系统提示");
+                MessageBox.Show("请输入商品折扣价", "系统提示");
+                return false;
             }
-            sqlconn.Close();
+            return true;
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Close();//取消
         }
 
         private void WJD()//无间道
@@ -49,17 +70,17 @@ namespace StoreSystem
             string sql = string.Format(@"select * from WareInfo");
             SqlDataAdapter sda = new SqlDataAdapter(sql, sqlconn);
             DataSet ds = new DataSet();
-            sda.Fill(ds);
+            sda.Fill(ds);//填充
             comboBox1.DataSource = ds.Tables[0];
-            comboBox1.ValueMember = "wareId";
-            comboBox1.DisplayMember = "wareName";
-            sqlconn.Close();
+            comboBox1.ValueMember = "wareId";//隐藏至
+            comboBox1.DisplayMember = "wareName";//显示值
+            sqlconn.Close();//关闭数据库
         }
 
         private void AddWarePriceForm_Load(object sender, EventArgs e)
         {
-            WJD();
-            comboBox1.SelectedIndex = 2;
+            WJD();//加载商品
+            comboBox1.SelectedIndex = 2;//默认商品
         }
 
         private void comboBox1_Click(object sender, EventArgs e)
@@ -68,12 +89,12 @@ namespace StoreSystem
             sqlconn.Open();
             //3>.写SQL语句:
             string sql = string.Format(@"select * from  WarePrice where wareId = '{0}'", comboBox1.SelectedValue);
-            SqlCommand com = new SqlCommand(sql, sqlconn);
+            SqlCommand com = new SqlCommand(sql, sqlconn);//选中商品加载价格
             SqlDataReader sdr = com.ExecuteReader();
             if (sdr.Read())
             {
-                textBox3.Text = sdr["warePrice"].ToString();
-                textBox1.Text = sdr["wareDiscount"].ToString();
+                textBox3.Text = sdr["warePrice"].ToString();//价格
+                textBox1.Text = sdr["wareDiscount"].ToString();//折扣
             }
             sqlconn.Close();
         }
@@ -86,7 +107,7 @@ namespace StoreSystem
                 return;
             }
             if (Convert.ToDouble(textBox4.Text) >= 0.1 && Convert.ToDouble(textBox4.Text) <= 0.9)
-            {
+            {//折扣计算
                 A = Convert.ToDouble(textBox3.Text) * Convert.ToDouble(textBox4.Text);
                 textBox1.Text = A.ToString();
             }

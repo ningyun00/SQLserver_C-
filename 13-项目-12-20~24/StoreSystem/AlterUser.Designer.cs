@@ -29,6 +29,7 @@ namespace StoreSystem
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AlterUser));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -39,13 +40,15 @@ namespace StoreSystem
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.textBox5 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("宋体", 14F);
-            this.label1.Location = new System.Drawing.Point(54, 30);
+            this.label1.Location = new System.Drawing.Point(33, 34);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(66, 19);
             this.label1.TabIndex = 0;
@@ -55,7 +58,7 @@ namespace StoreSystem
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("宋体", 14F);
-            this.label2.Location = new System.Drawing.Point(54, 86);
+            this.label2.Location = new System.Drawing.Point(33, 89);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(47, 19);
             this.label2.TabIndex = 0;
@@ -65,7 +68,7 @@ namespace StoreSystem
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("宋体", 14F);
-            this.label3.Location = new System.Drawing.Point(54, 142);
+            this.label3.Location = new System.Drawing.Point(33, 199);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(85, 19);
             this.label3.TabIndex = 0;
@@ -74,7 +77,7 @@ namespace StoreSystem
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("宋体", 14F);
-            this.textBox1.Location = new System.Drawing.Point(139, 27);
+            this.textBox1.Location = new System.Drawing.Point(173, 31);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(165, 29);
             this.textBox1.TabIndex = 1;
@@ -82,7 +85,7 @@ namespace StoreSystem
             // textBox2
             // 
             this.textBox2.Font = new System.Drawing.Font("宋体", 14F);
-            this.textBox2.Location = new System.Drawing.Point(139, 83);
+            this.textBox2.Location = new System.Drawing.Point(173, 86);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(165, 29);
             this.textBox2.TabIndex = 1;
@@ -90,7 +93,7 @@ namespace StoreSystem
             // textBox3
             // 
             this.textBox3.Font = new System.Drawing.Font("宋体", 14F);
-            this.textBox3.Location = new System.Drawing.Point(139, 139);
+            this.textBox3.Location = new System.Drawing.Point(173, 196);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(165, 29);
             this.textBox3.TabIndex = 1;
@@ -99,7 +102,7 @@ namespace StoreSystem
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("宋体", 14F);
-            this.label4.Location = new System.Drawing.Point(54, 198);
+            this.label4.Location = new System.Drawing.Point(33, 254);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(47, 19);
             this.label4.TabIndex = 0;
@@ -108,7 +111,7 @@ namespace StoreSystem
             // textBox4
             // 
             this.textBox4.Font = new System.Drawing.Font("宋体", 14F);
-            this.textBox4.Location = new System.Drawing.Point(139, 195);
+            this.textBox4.Location = new System.Drawing.Point(173, 251);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(165, 29);
             this.textBox4.TabIndex = 1;
@@ -116,7 +119,7 @@ namespace StoreSystem
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("宋体", 13F);
-            this.button1.Location = new System.Drawing.Point(58, 270);
+            this.button1.Location = new System.Drawing.Point(37, 297);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(87, 43);
             this.button1.TabIndex = 2;
@@ -127,7 +130,7 @@ namespace StoreSystem
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("宋体", 13F);
-            this.button2.Location = new System.Drawing.Point(229, 270);
+            this.button2.Location = new System.Drawing.Point(251, 297);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(87, 43);
             this.button2.TabIndex = 2;
@@ -135,22 +138,44 @@ namespace StoreSystem
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("宋体", 14F);
+            this.label5.Location = new System.Drawing.Point(33, 144);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(85, 19);
+            this.label5.TabIndex = 0;
+            this.label5.Text = "输入密码";
+            // 
+            // textBox5
+            // 
+            this.textBox5.Font = new System.Drawing.Font("宋体", 14F);
+            this.textBox5.Location = new System.Drawing.Point(173, 141);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(165, 29);
+            this.textBox5.TabIndex = 1;
+            // 
             // AlterUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(371, 332);
+            this.ClientSize = new System.Drawing.Size(371, 370);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.textBox5);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label4);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AlterUser";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "修改";
             this.Load += new System.EventHandler(this.AlterUser_Load);
             this.ResumeLayout(false);
@@ -170,5 +195,7 @@ namespace StoreSystem
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox textBox5;
     }
 }

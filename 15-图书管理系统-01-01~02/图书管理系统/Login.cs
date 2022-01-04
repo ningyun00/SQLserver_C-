@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace 图书管理系统
 {
@@ -59,7 +60,7 @@ namespace 图书管理系统
             {//管理员
                 Dao dao = new Dao();
                 string sql = string.Format("select * from [Administrator] where [Aname] = '{0}' and [Apwd] = '{1}'", textBox1.Text, textBox2.Text);//三种方法
-                IDataReader idr = dao.read(sql);
+                IDataReader idr = dao.read(sql);//返回受影响的行数
                 if (idr.Read())
                 {
                     MessageBox.Show("登陆成功", "系统提示");
@@ -70,6 +71,11 @@ namespace 图书管理系统
                 }
                 dao.DaoClose();
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

@@ -37,6 +37,7 @@ namespace StoreSystem
             return true;//都不为空
         }//登录判断
         public static string name;
+        public static string name1;
         private void userName()
         {//用户名查找
             SqlConnection con = null;
@@ -51,7 +52,7 @@ namespace StoreSystem
                     SqlCommand cmd = new SqlCommand(sql, con);
                     SqlDataReader sdr = cmd.ExecuteReader();
                     if (sdr.Read())
-                    {//找到用户                        
+                    {//找到用户
                     }
                     else
                     {
@@ -77,7 +78,7 @@ namespace StoreSystem
                 con.Open();
                 if (con.State == ConnectionState.Open)
                 {//打开数据库
-                    string sql = string.Format("select * from UserInfo where userPassword = '{0}'", txtUserPwd.Text.Trim());
+                    string sql = string.Format("select * from UserInfo where userPassword = '{0}' and userName='{1}'", txtUserPwd.Text.Trim(), txtUserName.Text.Trim());
                     SqlCommand cmd = new SqlCommand(sql, con);
                     SqlDataReader sdr = cmd.ExecuteReader();
                     if (sdr.Read())
@@ -149,7 +150,7 @@ namespace StoreSystem
         }
 
         private void LoginForm_Load(object sender, EventArgs e)
-        {   
+        {
             yanzhengma();
 
         }

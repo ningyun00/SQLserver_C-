@@ -75,10 +75,9 @@ namespace StoreSystem
                 if (LoginForm.A == 0)
                 {
                     addUser();
-                    MessageBox.Show("将在5秒后退出系统", "系统提示");
-                    System.Threading.Thread.Sleep(5000);
-                    Application.ExitThread();
-                    Application.Restart();
+                    LoginForm login = new LoginForm();
+                    login.Show();
+                    this.Hide();
                 }
                 else if (LoginForm.A == 1)
                 {
