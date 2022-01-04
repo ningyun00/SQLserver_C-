@@ -42,7 +42,7 @@ namespace 图书管理系统
         {
             if (radioButton1.Checked == true)
             {//普通用户
-                Dao dao = new Dao();       
+                Dao dao = new Dao();
                 string sql = string.Format("select * from [User] where [Uname] = '{0}' and [Upwd] = '{1}'", textBox1.Text, textBox2.Text);
                 IDataReader idr = dao.read(sql);
                 if (idr.Read())

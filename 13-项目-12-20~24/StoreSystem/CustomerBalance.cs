@@ -121,7 +121,7 @@ namespace StoreSystem
         private void button3_Click(object sender, EventArgs e)
         {
             MessageBox.Show(sum.ToString(), "系统提示");
-            textBox2.Text = "您购买了：" + listView1.Items.Count.ToString() + "件商品。\n总价格是：" + sum + "元";
+            textBox2.Text = "您购买了：" + (Convert.ToInt32(listView1.Items.Count)-1) + "件商品。\n总价格是：" + sum + "元";
             try
             {
                 //连接数据库

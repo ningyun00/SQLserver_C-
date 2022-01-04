@@ -16,9 +16,6 @@ namespace 图书管理系统
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Login());
         }
-        class Data
-        {
-            public static string Uname = "";//用户名
-        }
+        public static string Uname = "";//用户名        
     }
 }
