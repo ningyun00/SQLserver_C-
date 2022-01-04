@@ -68,6 +68,12 @@
     <Compile Include="AddWarePriceForm.Designer.cs">
       <DependentUpon>AddWarePriceForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="AlterUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlterUser.Designer.cs">
+      <DependentUpon>AlterUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="help.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -134,6 +140,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AddWarePriceForm.resx">
       <DependentUpon>AddWarePriceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlterUser.resx">
+      <DependentUpon>AlterUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="help.resx">
       <DependentUpon>help.cs</DependentUpon>
@@ -546,6 +555,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="图片\111个彩色网页PNG图标\wizard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

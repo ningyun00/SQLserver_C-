@@ -58,7 +58,6 @@ namespace StoreSystem
                 {
                     sqlconn.Close();
                 }
-
             }
         }
         private void shanchu()
@@ -79,8 +78,24 @@ namespace StoreSystem
             }
             sqlconn.Close();
         }
+        public static int A;
+        private void dataGridView1_CellMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            A = (int)dataGridView1.SelectedRows[0].Cells[0].Value;
+            foreach (Form item in MdiChildren)
+            {
+                if (item.GetType().Name == "AlterUser")
+                {//商品类型管理
+                    item.BringToFront();
+                    return;
+                }
+            }
+            AlterUser au = new AlterUser();
+            au.MdiParent = MdiParent;
+            au.Show();
+        }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void UserInfoManage_Load(object sender, EventArgs e)
         {
 
         }
