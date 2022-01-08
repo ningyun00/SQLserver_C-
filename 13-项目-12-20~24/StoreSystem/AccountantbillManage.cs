@@ -21,11 +21,8 @@ namespace StoreSystem
         //连接数据库
         private void button1_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("确定删除吗？", "系统提示", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
-            {
-                shanchu();//删除
-                chaXunSuoYou();//查询所有
-            }
+            shanchu();//删除
+            chaXunSuoYou();
         }
 
         private void shanchu()
