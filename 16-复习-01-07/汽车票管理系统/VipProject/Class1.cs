@@ -4,7 +4,7 @@ using System.Text;
 using System.Data.SqlClient;
 using System.Data;
 
-namespace     //继承于哪个项目
+namespace VipProject  //继承于哪个项目
 {
     class NET
     {//创建一个类
@@ -13,7 +13,7 @@ namespace     //继承于哪个项目
 
         public SqlConnection Con()
         {//连接方法
-            CON = new SqlConnection("server=.;uid=sa;pwd=123456;database=");
+            CON = new SqlConnection("server=.;uid=sa;pwd=123456;database=Ticket");
             //连接数据库
             CON.Open();
             //打开数据库
