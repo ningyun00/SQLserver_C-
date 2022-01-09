@@ -16,7 +16,7 @@ namespace VipProject
         }
         NO1 no1 = new NO1();
         private void Form2_Load(object sender, EventArgs e)
-        {//加载医生下拉框
+        {//加载班级下拉框
             try
             {//异常处理
                 string sql = string.Format("select * from Doctor");
