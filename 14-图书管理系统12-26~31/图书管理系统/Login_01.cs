@@ -149,6 +149,10 @@ namespace 图书管理系统
                                 Homepage_02 zhuye = new Homepage_02();
                                 zhuye.Show();
                                 this.Hide();
+                                if (com.ExecuteNonQuery()>0)
+                                {
+
+                                }
                             }
                             else
                             {
