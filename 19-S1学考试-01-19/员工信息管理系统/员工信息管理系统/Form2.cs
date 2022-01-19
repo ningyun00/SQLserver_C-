@@ -54,7 +54,7 @@ namespace 员工信息管理系统
                 MessageBox.Show(ex.Message, "来自系统提示");
             }
             finally
-            {//一点执行
+            {//一定执行
                 net.NETClose();
                 //关闭数据库
             }
@@ -75,7 +75,7 @@ namespace 员工信息管理系统
                     //数据库执行命令
                     if (net.Execute(sql) > 0)
                     {//受影响的行数
-                        MessageBox.Show("恭喜,添加成功", "系统提示");
+                        MessageBox.Show("恭喜, 添加成功", "系统提示");
                         //添加成功
                     }
                     else
@@ -89,7 +89,7 @@ namespace 员工信息管理系统
                     MessageBox.Show(ex.Message, "来自系统提示");
                 }
                 finally
-                {//一点执行
+                {//一定执行
                     net.NETClose();
                     //关闭数据库
                 }
