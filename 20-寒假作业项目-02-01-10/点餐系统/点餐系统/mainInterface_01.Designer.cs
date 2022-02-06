@@ -30,6 +30,8 @@ namespace 点餐系统
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem("");
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(mainInterface_01));
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
@@ -39,6 +41,11 @@ namespace 点餐系统
             this.toolStripStatusLabel6 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel7 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel8 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripStatusLabel9 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripStatusLabel10 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripStatusLabel11 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripStatusLabel12 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripStatusLabel13 = new System.Windows.Forms.ToolStripStatusLabel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
             this.button30 = new System.Windows.Forms.Button();
@@ -72,28 +79,14 @@ namespace 点餐系统
             this.button6 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.listView1 = new System.Windows.Forms.ListView();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.button33 = new System.Windows.Forms.Button();
+            this.button32 = new System.Windows.Forms.Button();
             this.button31 = new System.Windows.Forms.Button();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.statusStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -111,15 +104,21 @@ namespace 点餐系统
             this.toolStripStatusLabel5,
             this.toolStripStatusLabel6,
             this.toolStripStatusLabel7,
-            this.toolStripStatusLabel8});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 724);
+            this.toolStripStatusLabel8,
+            this.toolStripStatusLabel9,
+            this.toolStripStatusLabel10,
+            this.toolStripStatusLabel11,
+            this.toolStripStatusLabel12,
+            this.toolStripStatusLabel13});
+            this.statusStrip1.Location = new System.Drawing.Point(0, 723);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(1316, 25);
+            this.statusStrip1.Size = new System.Drawing.Size(1345, 25);
             this.statusStrip1.TabIndex = 2;
             this.statusStrip1.Text = "statusStrip1";
             // 
             // toolStripStatusLabel1
             // 
+            this.toolStripStatusLabel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
             this.toolStripStatusLabel1.Size = new System.Drawing.Size(79, 20);
             this.toolStripStatusLabel1.Text = "当前时间：";
@@ -168,6 +167,41 @@ namespace 点餐系统
             this.toolStripStatusLabel8.Size = new System.Drawing.Size(152, 20);
             this.toolStripStatusLabel8.Text = "toolStripStatusLabel8";
             // 
+            // toolStripStatusLabel9
+            // 
+            this.toolStripStatusLabel9.Name = "toolStripStatusLabel9";
+            this.toolStripStatusLabel9.Size = new System.Drawing.Size(107, 20);
+            this.toolStripStatusLabel9.Text = "当前登录权限：";
+            // 
+            // toolStripStatusLabel10
+            // 
+            this.toolStripStatusLabel10.ForeColor = System.Drawing.Color.Red;
+            this.toolStripStatusLabel10.Name = "toolStripStatusLabel10";
+            this.toolStripStatusLabel10.Size = new System.Drawing.Size(160, 20);
+            this.toolStripStatusLabel10.Text = "toolStripStatusLabel10";
+            // 
+            // toolStripStatusLabel11
+            // 
+            this.toolStripStatusLabel11.Name = "toolStripStatusLabel11";
+            this.toolStripStatusLabel11.Size = new System.Drawing.Size(107, 20);
+            this.toolStripStatusLabel11.Text = "当前登录用户：";
+            // 
+            // toolStripStatusLabel12
+            // 
+            this.toolStripStatusLabel12.Name = "toolStripStatusLabel12";
+            this.toolStripStatusLabel12.Size = new System.Drawing.Size(160, 20);
+            this.toolStripStatusLabel12.Text = "toolStripStatusLabel12";
+            // 
+            // toolStripStatusLabel13
+            // 
+            this.toolStripStatusLabel13.ActiveLinkColor = System.Drawing.Color.White;
+            this.toolStripStatusLabel13.BorderStyle = System.Windows.Forms.Border3DStyle.SunkenInner;
+            this.toolStripStatusLabel13.ForeColor = System.Drawing.Color.Red;
+            this.toolStripStatusLabel13.Name = "toolStripStatusLabel13";
+            this.toolStripStatusLabel13.Size = new System.Drawing.Size(65, 20);
+            this.toolStripStatusLabel13.Text = "添加菜品";
+            this.toolStripStatusLabel13.Click += new System.EventHandler(this.toolStripStatusLabel13_Click);
+            // 
             // timer1
             // 
             this.timer1.Interval = 1000;
@@ -208,9 +242,9 @@ namespace 点餐系统
             this.panel1.Controls.Add(this.button1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel1.Font = new System.Drawing.Font("宋体", 15F);
-            this.panel1.Location = new System.Drawing.Point(371, 0);
+            this.panel1.Location = new System.Drawing.Point(400, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(945, 724);
+            this.panel1.Size = new System.Drawing.Size(945, 723);
             this.panel1.TabIndex = 0;
             // 
             // button30
@@ -533,39 +567,83 @@ namespace 点餐系统
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.listView1);
+            this.panel2.Controls.Add(this.button33);
+            this.panel2.Controls.Add(this.button32);
             this.panel2.Controls.Add(this.button31);
-            this.panel2.Controls.Add(this.label22);
-            this.panel2.Controls.Add(this.label15);
-            this.panel2.Controls.Add(this.label8);
-            this.panel2.Controls.Add(this.label21);
-            this.panel2.Controls.Add(this.label14);
-            this.panel2.Controls.Add(this.label7);
-            this.panel2.Controls.Add(this.label20);
-            this.panel2.Controls.Add(this.label13);
-            this.panel2.Controls.Add(this.label6);
-            this.panel2.Controls.Add(this.label19);
-            this.panel2.Controls.Add(this.label12);
-            this.panel2.Controls.Add(this.label5);
-            this.panel2.Controls.Add(this.label18);
-            this.panel2.Controls.Add(this.label11);
-            this.panel2.Controls.Add(this.label4);
-            this.panel2.Controls.Add(this.label17);
-            this.panel2.Controls.Add(this.label10);
-            this.panel2.Controls.Add(this.label3);
-            this.panel2.Controls.Add(this.label16);
-            this.panel2.Controls.Add(this.label9);
-            this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(365, 724);
+            this.panel2.Size = new System.Drawing.Size(394, 723);
             this.panel2.TabIndex = 1;
+            // 
+            // listView1
+            // 
+            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader1,
+            this.columnHeader2,
+            this.columnHeader3,
+            this.columnHeader4});
+            this.listView1.Font = new System.Drawing.Font("宋体", 15F);
+            this.listView1.FullRowSelect = true;
+            this.listView1.GridLines = true;
+            this.listView1.HideSelection = false;
+            this.listView1.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
+            listViewItem1});
+            this.listView1.Location = new System.Drawing.Point(27, 68);
+            this.listView1.Name = "listView1";
+            this.listView1.Size = new System.Drawing.Size(340, 550);
+            this.listView1.TabIndex = 1;
+            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.listView1.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "编号";
+            this.columnHeader1.Width = 55;
+            // 
+            // columnHeader2
+            // 
+            this.columnHeader2.Text = "菜名";
+            this.columnHeader2.Width = 110;
+            // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "原价";
+            this.columnHeader3.Width = 85;
+            // 
+            // columnHeader4
+            // 
+            this.columnHeader4.Text = "折扣价";
+            this.columnHeader4.Width = 85;
+            // 
+            // button33
+            // 
+            this.button33.Font = new System.Drawing.Font("宋体", 10F);
+            this.button33.Location = new System.Drawing.Point(280, 654);
+            this.button33.Name = "button33";
+            this.button33.Size = new System.Drawing.Size(87, 41);
+            this.button33.TabIndex = 2;
+            this.button33.Text = "添加用户";
+            this.button33.UseVisualStyleBackColor = true;
+            this.button33.Click += new System.EventHandler(this.button33_Click);
+            // 
+            // button32
+            // 
+            this.button32.Font = new System.Drawing.Font("宋体", 10F);
+            this.button32.Location = new System.Drawing.Point(154, 654);
+            this.button32.Name = "button32";
+            this.button32.Size = new System.Drawing.Size(87, 41);
+            this.button32.TabIndex = 1;
+            this.button32.Text = "查看订单";
+            this.button32.UseVisualStyleBackColor = true;
+            this.button32.Click += new System.EventHandler(this.button32_Click);
             // 
             // button31
             // 
             this.button31.Font = new System.Drawing.Font("宋体", 10F);
-            this.button31.Location = new System.Drawing.Point(135, 654);
+            this.button31.Location = new System.Drawing.Point(28, 654);
             this.button31.Name = "button31";
             this.button31.Size = new System.Drawing.Size(87, 41);
             this.button31.TabIndex = 0;
@@ -573,223 +651,13 @@ namespace 点餐系统
             this.button31.UseVisualStyleBackColor = true;
             this.button31.Click += new System.EventHandler(this.button31_Click);
             // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("宋体", 15F);
-            this.label22.Location = new System.Drawing.Point(258, 595);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(49, 20);
-            this.label22.TabIndex = 1;
-            this.label22.Text = "价格";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("宋体", 15F);
-            this.label15.Location = new System.Drawing.Point(174, 595);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(49, 20);
-            this.label15.TabIndex = 1;
-            this.label15.Text = "菜品";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("宋体", 15F);
-            this.label8.Location = new System.Drawing.Point(58, 595);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(79, 20);
-            this.label8.TabIndex = 1;
-            this.label8.Text = "菜品7：";
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("宋体", 15F);
-            this.label21.Location = new System.Drawing.Point(258, 510);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(49, 20);
-            this.label21.TabIndex = 1;
-            this.label21.Text = "价格";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("宋体", 15F);
-            this.label14.Location = new System.Drawing.Point(173, 510);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(49, 20);
-            this.label14.TabIndex = 1;
-            this.label14.Text = "菜品";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("宋体", 15F);
-            this.label7.Location = new System.Drawing.Point(58, 510);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(79, 20);
-            this.label7.TabIndex = 1;
-            this.label7.Text = "菜品6：";
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("宋体", 15F);
-            this.label20.Location = new System.Drawing.Point(258, 425);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(49, 20);
-            this.label20.TabIndex = 1;
-            this.label20.Text = "价格";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("宋体", 15F);
-            this.label13.Location = new System.Drawing.Point(173, 425);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(49, 20);
-            this.label13.TabIndex = 1;
-            this.label13.Text = "菜品";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("宋体", 15F);
-            this.label6.Location = new System.Drawing.Point(58, 425);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(79, 20);
-            this.label6.TabIndex = 1;
-            this.label6.Text = "菜品5：";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("宋体", 15F);
-            this.label19.Location = new System.Drawing.Point(258, 340);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(49, 20);
-            this.label19.TabIndex = 1;
-            this.label19.Text = "价格";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("宋体", 15F);
-            this.label12.Location = new System.Drawing.Point(173, 340);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(49, 20);
-            this.label12.TabIndex = 1;
-            this.label12.Text = "菜品";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("宋体", 15F);
-            this.label5.Location = new System.Drawing.Point(58, 340);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(79, 20);
-            this.label5.TabIndex = 1;
-            this.label5.Text = "菜品4：";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("宋体", 15F);
-            this.label18.Location = new System.Drawing.Point(258, 255);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(49, 20);
-            this.label18.TabIndex = 1;
-            this.label18.Text = "价格";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("宋体", 15F);
-            this.label11.Location = new System.Drawing.Point(173, 255);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(49, 20);
-            this.label11.TabIndex = 1;
-            this.label11.Text = "菜品";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("宋体", 15F);
-            this.label4.Location = new System.Drawing.Point(58, 255);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(79, 20);
-            this.label4.TabIndex = 1;
-            this.label4.Text = "菜品3：";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("宋体", 15F);
-            this.label17.Location = new System.Drawing.Point(258, 170);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(49, 20);
-            this.label17.TabIndex = 1;
-            this.label17.Text = "价格";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("宋体", 15F);
-            this.label10.Location = new System.Drawing.Point(173, 170);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(49, 20);
-            this.label10.TabIndex = 1;
-            this.label10.Text = "菜品";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("宋体", 15F);
-            this.label3.Location = new System.Drawing.Point(58, 170);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(79, 20);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "菜品2：";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("宋体", 15F);
-            this.label16.Location = new System.Drawing.Point(258, 85);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(49, 20);
-            this.label16.TabIndex = 1;
-            this.label16.Text = "价格";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("宋体", 15F);
-            this.label9.Location = new System.Drawing.Point(173, 85);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(49, 20);
-            this.label9.TabIndex = 1;
-            this.label9.Text = "菜品";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("宋体", 15F);
-            this.label2.Location = new System.Drawing.Point(58, 85);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(79, 20);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "菜品1：";
-            // 
             // label1
             // 
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("宋体", 20F);
             this.label1.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.label1.Location = new System.Drawing.Point(109, 27);
+            this.label1.Location = new System.Drawing.Point(124, 27);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(147, 27);
             this.label1.TabIndex = 0;
@@ -799,10 +667,11 @@ namespace 点餐系统
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1316, 749);
+            this.ClientSize = new System.Drawing.Size(1345, 748);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.statusStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "mainInterface_01";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "农家小菜系统";
@@ -863,28 +732,19 @@ namespace 点餐系统
         private System.Windows.Forms.Button button22;
         private System.Windows.Forms.Button button26;
         private System.Windows.Forms.Button button21;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button button31;
-        private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ColumnHeader columnHeader1;
+        private System.Windows.Forms.ColumnHeader columnHeader2;
+        private System.Windows.Forms.ColumnHeader columnHeader3;
+        private System.Windows.Forms.ColumnHeader columnHeader4;
+        private System.Windows.Forms.Button button32;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel9;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel10;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel11;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel12;
+        private System.Windows.Forms.Button button33;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel13;
     }
 }
 

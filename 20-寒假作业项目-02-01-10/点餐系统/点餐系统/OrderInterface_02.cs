@@ -139,6 +139,7 @@ namespace 点餐系统
                 sumManey = 0;
                 sum = 0;
                 sum1 = 0;
+                label18.Text = "0";
                 //清空价格
             }
         }
@@ -179,7 +180,7 @@ namespace 点餐系统
                     sum = Convert.ToDouble(textBox1.Text);
                     sum1 = Convert.ToDouble(label7.Text);
                     jiagejeiqu = (sum - sum1).ToString();
-                    label11.Text = jiagejeiqu.Substring(0, 4);
+                    label11.Text = jiagejeiqu;
                 }
                 else
                 {
@@ -211,7 +212,6 @@ namespace 点餐系统
         {
             try
             {
-
                 sql = string.Format("update Table01 set TableType = '有' where TableNumber = {0}", label2.Text);
                 if (net.Execute(sql) > 0)
                 {//添加成功
@@ -227,7 +227,7 @@ namespace 点餐系统
                 for (int i = 0; i <= Convert.ToInt32(label18.Text) - 1; i++)
                 {
                     listView1.Items[i].Selected = true;
-                    caipin += listView1.Items[listView1.SelectedItems[i].Index].SubItems[1].Text + "。";
+                    caipin += listView1.Items[listView1.SelectedItems[i].Index].SubItems[1].Text + "  ";
                 }
                 sql = string.Format("update OrderList05  set OrderListNO = {0} ", label16.Text);
                 if (net.Execute(sql) > 0)
@@ -244,7 +244,7 @@ namespace 点餐系统
                 {
                     if (MessageBox.Show("要打印订单吗？", "系统提示", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                     {//打印订单
-                        MessageBox.Show(caipin + "\n共" + label18.Text + "份\n" + "一共" + label11.Text + "元\n", "系统提示");
+                        MessageBox.Show(caipin + "\n共" + label18.Text + "份\n" + "找零：" + label11.Text + "元\n", "系统提示");
                     }
                 }
                 else
@@ -267,7 +267,9 @@ namespace 点餐系统
         {
             if (MessageBox.Show("确定要取消点餐吗？", "系统提示", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
-                Hide();
+                e.Cancel = false;
+                mainInterface_01 mainInterface = new mainInterface_01();
+                mainInterface.LoadClass();
             }
             else
             {
@@ -296,6 +298,25 @@ namespace 点餐系统
             }
         }
         #endregion
+
+        private void OrderInterface_02_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void OrderInterface_02_AutoSizeChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void OrderInterface_02_MaximumSizeChanged(object sender, EventArgs e)
+        {
+            if (WindowState == FormWindowState.Maximized)
+            {
+                WindowState = FormWindowState.Normal;
+            }
+
+        }
     }
 }
 

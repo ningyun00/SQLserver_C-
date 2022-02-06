@@ -46,11 +46,17 @@
     <Compile Include="Add_04.Designer.cs">
       <DependentUpon>Add_04.cs</DependentUpon>
     </Compile>
-    <Compile Include="alterInterface_03.cs">
+    <Compile Include="Discount_05.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="alterInterface_03.Designer.cs">
-      <DependentUpon>alterInterface_03.cs</DependentUpon>
+    <Compile Include="Discount_05.Designer.cs">
+      <DependentUpon>Discount_05.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login_07.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login_07.Designer.cs">
+      <DependentUpon>Login_07.cs</DependentUpon>
     </Compile>
     <Compile Include="mainInterface_01.cs">
       <SubType>Form</SubType>
@@ -67,11 +73,26 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Register_00.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Register_00.Designer.cs">
+      <DependentUpon>Register_00.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vegetable_06.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vegetable_06.Designer.cs">
+      <DependentUpon>Vegetable_06.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Add_04.resx">
       <DependentUpon>Add_04.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="alterInterface_03.resx">
-      <DependentUpon>alterInterface_03.cs</DependentUpon>
+    <EmbeddedResource Include="Discount_05.resx">
+      <DependentUpon>Discount_05.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login_07.resx">
+      <DependentUpon>Login_07.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="mainInterface_01.resx">
       <DependentUpon>mainInterface_01.cs</DependentUpon>
@@ -87,7 +108,14 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Register_00.resx">
+      <DependentUpon>Register_00.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vegetable_06.resx">
+      <DependentUpon>Vegetable_06.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -97,6 +125,9 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\02.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

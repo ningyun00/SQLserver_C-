@@ -4,6 +4,9 @@ insert into EverySingle02 values('Çå³´°×²Ë',1,10.0,10.0,'');
 insert into EverySingle02 values('½´ÓÍ°×²Ë',1,9.0,9.0,'');
 insert into EverySingle02 values('Ë®Öó°×²Ë',1,5.0,5.0,'');
 insert into EverySingle02 values('°×²Ë',1,2.0,2.0,'');
+select * from EverySingle02 where Vegetables = '°×²Ë';
+
+select * from EverySingle02 where OriginalCost !=Discount;
 /*Àä²Ë*/
 insert into EverySingle02 values('º«¹úÅÝ²Ë',2,10.0,10.0,'');
 insert into EverySingle02 values('Ãæ½´»Æ¹Ï',2,10.0,10.0,'');
@@ -20,9 +23,11 @@ insert into EverySingle02 values('°ÄÖÞÁúÏº',3,128.9,128.9,'Ê±¼Û');
 
 insert into Table01 values(1,1,12,12,12,'2022','2022','ÓÐ','ÎÞ');
 
-insert into OrderList05 values(99);
+insert into User_06 values('ning','123456');
+select * from User_06 UserName ='ning' or UserPwd = '123456';
+
  update Table01 set TableType='ÎÞ'where TableNumber =13;
- 
+ update EverySingle02 set Remark ={0} where Vegetables='{1}';
  update OrderList05 set OrderListNO=99;
  update Table01 set TableType = 'ÎÞ' where TableNumber = 12
 select * from Table01 where TableType = 'ÓÐ'; 
@@ -30,6 +35,7 @@ select TableNumber from Table01;
 select con(TableNumber) from Table01 where TableType = 'ÓÐ';
 select COUNT(TableNumber) ±àºÅ from Table01 where TableType = 'ÓÐ';
 select * from OrderTable04;
+select NO,TableNumber,OrderNumber,Vegetables from OrderTable04;
 
 select * from OrderList05;
 

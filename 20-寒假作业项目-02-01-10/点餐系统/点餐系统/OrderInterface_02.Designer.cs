@@ -30,6 +30,7 @@ namespace 点餐系统
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(OrderInterface_02));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -157,7 +158,7 @@ namespace 点餐系统
             this.button1.Location = new System.Drawing.Point(681, 5);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(137, 40);
-            this.button1.TabIndex = 2;
+            this.button1.TabIndex = 0;
             this.button1.Text = "加入订单";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -170,7 +171,7 @@ namespace 点餐系统
             this.button2.Location = new System.Drawing.Point(743, 499);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(85, 40);
-            this.button2.TabIndex = 7;
+            this.button2.TabIndex = 6;
             this.button2.Text = "结算";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -181,7 +182,7 @@ namespace 点餐系统
             this.button4.Location = new System.Drawing.Point(642, 499);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(85, 40);
-            this.button4.TabIndex = 6;
+            this.button4.TabIndex = 4;
             this.button4.Text = "清空";
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
@@ -247,7 +248,7 @@ namespace 点餐系统
             this.comboBox1.Location = new System.Drawing.Point(445, 409);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(85, 28);
-            this.comboBox1.TabIndex = 4;
+            this.comboBox1.TabIndex = 1;
             this.comboBox1.Validating += new System.ComponentModel.CancelEventHandler(this.comboBox1_Validating);
             // 
             // label4
@@ -286,7 +287,7 @@ namespace 点餐系统
             this.textBox1.Location = new System.Drawing.Point(672, 409);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(73, 30);
-            this.textBox1.TabIndex = 5;
+            this.textBox1.TabIndex = 2;
             this.textBox1.Text = "0";
             // 
             // label7
@@ -371,7 +372,7 @@ namespace 点餐系统
             this.button3.Location = new System.Drawing.Point(743, 463);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(85, 30);
-            this.button3.TabIndex = 6;
+            this.button3.TabIndex = 5;
             this.button3.Text = "计算价格";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
@@ -458,12 +459,16 @@ namespace 点餐系统
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "OrderInterface_02";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "点餐界面";
+            this.AutoSizeChanged += new System.EventHandler(this.OrderInterface_02_AutoSizeChanged);
+            this.MaximumSizeChanged += new System.EventHandler(this.OrderInterface_02_MaximumSizeChanged);
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.OrderInterface_02_FormClosing);
             this.Load += new System.EventHandler(this.OrderInterface_02_Load);
+            this.Click += new System.EventHandler(this.OrderInterface_02_Click);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
