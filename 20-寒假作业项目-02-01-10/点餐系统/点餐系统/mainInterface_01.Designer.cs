@@ -88,9 +88,13 @@ namespace 点餐系统
             this.button32 = new System.Windows.Forms.Button();
             this.button31 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.toolStripStatusLabel14 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.刷新ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // statusStrip1
@@ -109,7 +113,8 @@ namespace 点餐系统
             this.toolStripStatusLabel10,
             this.toolStripStatusLabel11,
             this.toolStripStatusLabel12,
-            this.toolStripStatusLabel13});
+            this.toolStripStatusLabel13,
+            this.toolStripStatusLabel14});
             this.statusStrip1.Location = new System.Drawing.Point(0, 723);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Size = new System.Drawing.Size(1345, 25);
@@ -210,6 +215,7 @@ namespace 点餐系统
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel1.ContextMenuStrip = this.contextMenuStrip1;
             this.panel1.Controls.Add(this.button30);
             this.panel1.Controls.Add(this.button25);
             this.panel1.Controls.Add(this.button20);
@@ -567,6 +573,7 @@ namespace 点餐系统
             // 
             // panel2
             // 
+            this.panel2.ContextMenuStrip = this.contextMenuStrip1;
             this.panel2.Controls.Add(this.listView1);
             this.panel2.Controls.Add(this.button33);
             this.panel2.Controls.Add(this.button32);
@@ -632,7 +639,7 @@ namespace 点餐系统
             // button32
             // 
             this.button32.Font = new System.Drawing.Font("宋体", 10F);
-            this.button32.Location = new System.Drawing.Point(154, 654);
+            this.button32.Location = new System.Drawing.Point(155, 654);
             this.button32.Name = "button32";
             this.button32.Size = new System.Drawing.Size(87, 41);
             this.button32.TabIndex = 1;
@@ -663,11 +670,33 @@ namespace 点餐系统
             this.label1.TabIndex = 0;
             this.label1.Text = "今日特价菜";
             // 
+            // toolStripStatusLabel14
+            // 
+            this.toolStripStatusLabel14.Name = "toolStripStatusLabel14";
+            this.toolStripStatusLabel14.Size = new System.Drawing.Size(37, 20);
+            this.toolStripStatusLabel14.Text = "刷新";
+            this.toolStripStatusLabel14.Click += new System.EventHandler(this.toolStripStatusLabel14_Click);
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.刷新ToolStripMenuItem});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(181, 48);
+            // 
+            // 刷新ToolStripMenuItem
+            // 
+            this.刷新ToolStripMenuItem.Name = "刷新ToolStripMenuItem";
+            this.刷新ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.刷新ToolStripMenuItem.Text = "刷新";
+            this.刷新ToolStripMenuItem.Click += new System.EventHandler(this.刷新ToolStripMenuItem_Click);
+            // 
             // mainInterface_01
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1345, 748);
+            this.ContextMenuStrip = this.contextMenuStrip1;
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.statusStrip1);
@@ -683,6 +712,7 @@ namespace 点餐系统
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -745,6 +775,9 @@ namespace 点餐系统
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel12;
         private System.Windows.Forms.Button button33;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel13;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel14;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem 刷新ToolStripMenuItem;
     }
 }
 

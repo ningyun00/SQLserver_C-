@@ -68,6 +68,7 @@ namespace 点餐系统
             this.label18 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
+            this.button6 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -189,10 +190,10 @@ namespace 点餐系统
             // 
             // button5
             // 
-            this.button5.Font = new System.Drawing.Font("宋体", 15F);
+            this.button5.Font = new System.Drawing.Font("宋体", 9F);
             this.button5.Location = new System.Drawing.Point(445, 499);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(185, 40);
+            this.button5.Size = new System.Drawing.Size(90, 40);
             this.button5.TabIndex = 3;
             this.button5.Text = "减去选中订单菜品";
             this.button5.UseVisualStyleBackColor = true;
@@ -427,11 +428,23 @@ namespace 点餐系统
             this.label16.TabIndex = 4;
             this.label16.Text = "编号";
             // 
+            // button6
+            // 
+            this.button6.Font = new System.Drawing.Font("宋体", 12F);
+            this.button6.Location = new System.Drawing.Point(541, 499);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(90, 40);
+            this.button6.TabIndex = 7;
+            this.button6.Text = "清除该桌";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
             // OrderInterface_02
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(839, 561);
+            this.Controls.Add(this.button6);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label16);
@@ -464,11 +477,8 @@ namespace 点餐系统
             this.Name = "OrderInterface_02";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "点餐界面";
-            this.AutoSizeChanged += new System.EventHandler(this.OrderInterface_02_AutoSizeChanged);
-            this.MaximumSizeChanged += new System.EventHandler(this.OrderInterface_02_MaximumSizeChanged);
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.OrderInterface_02_FormClosing);
             this.Load += new System.EventHandler(this.OrderInterface_02_Load);
-            this.Click += new System.EventHandler(this.OrderInterface_02_Click);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -514,5 +524,6 @@ namespace 点餐系统
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Button button6;
     }
 }
