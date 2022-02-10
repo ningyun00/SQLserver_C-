@@ -1,0 +1,46 @@
+			桌表
+编号	NO		int		Unchecked
+桌号	TableNumber	int		Unchecked
+桌位状态	TableType	varchar(2	)	Unchecked
+订单编号   OrderTable04          int  		Unchecked
+备注	Remark		varchar(200)	Checked
+
+			菜品表
+编号	NO		int		Unchecked
+菜品	Vegetables	varchar(50)	Unchecked
+菜品类型	DishesType	int		Unchecked
+原价	OriginalCost	float		Unchecked
+折扣价	Discount		float		Unchecked
+备注	Remark		varchar(200)	Checked	
+
+			类型表
+编号	NO		int		Unchecked
+菜品类型	DishesType	varchar(50)	Unchecked
+备注	Remark		varchar(200)	Checked	
+
+			订购表
+编号	NO		int		Unchecked
+桌号	TableNumber	int		Unchecked
+订单编号	OrderNumber	int		Unchecked
+开始时间	StartTime		datetime		Unchecked
+结束时间	EndTime		datetime		Unchecked		
+菜品	Vegetables	varchar(500)	Unchecked
+应付	DealWith		float		Unchecked
+支付	Payment		float		Unchecked
+找零	Change		float		Unchecked
+备注	Remark		varchar(200)	Checked		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

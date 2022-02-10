@@ -68,6 +68,8 @@ namespace 点餐系统
 
         public void LoadClass()
         {
+            Button button = new Button();
+            button.BackColor = Color.White;
             timer1.Start();
             //计时器开启
             toolStripStatusLabel4.Text = maxTable.ToString();
@@ -243,6 +245,16 @@ namespace 点餐系统
         {
             Add_04 add = new Add_04();
             add.ShowDialog();
+        }
+
+        private void toolStripStatusLabel14_Click(object sender, EventArgs e)
+        {
+            LoadClass();
+        }
+
+        private void 刷新ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            LoadClass();
         }
     }
 }

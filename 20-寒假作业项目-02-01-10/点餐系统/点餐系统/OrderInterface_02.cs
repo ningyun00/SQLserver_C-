@@ -245,6 +245,8 @@ namespace 点餐系统
                     if (MessageBox.Show("要打印订单吗？", "系统提示", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                     {//打印订单
                         MessageBox.Show(caipin + "\n共" + label18.Text + "份\n" + "找零：" + label11.Text + "元\n", "系统提示");
+                        mainInterface_01 mainInterface = new mainInterface_01();
+                        mainInterface.LoadClass();
                     }
                 }
                 else
@@ -299,23 +301,27 @@ namespace 点餐系统
         }
         #endregion
 
-        private void OrderInterface_02_Click(object sender, EventArgs e)
+        private void button6_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void OrderInterface_02_AutoSizeChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void OrderInterface_02_MaximumSizeChanged(object sender, EventArgs e)
-        {
-            if (WindowState == FormWindowState.Maximized)
+            try
             {
-                WindowState = FormWindowState.Normal;
+                if (MessageBox.Show("是否清除吗？", "系统提示", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
+                {
+                    sql = string.Format("update Table01 set TableType='无'where TableNumber={0}", label2.Text);
+                    if (net.Execute(sql) > 0)
+                    {
+                        MessageBox.Show("清除成功", "系统提示");
+                    }
+                    else
+                    {
+                        MessageBox.Show("清除失败", "系统提示");
+                    }
+                }
             }
-
+            catch (Exception ErrorPrompt)
+            {//错误提示
+                MessageBox.Show(ErrorPrompt.Message, "来自系统提示");
+            }
         }
     }
 }
